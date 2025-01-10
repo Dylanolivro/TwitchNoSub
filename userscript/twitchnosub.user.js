@@ -21,8 +21,8 @@
     const originalAppendChild = document.head.appendChild;
 
     document.head.appendChild = function (element) {
-        if (element.tagName === "SCRIPT") {
-            if (element.src.includes("player-core-variant-a")) {
+        if (element?.tagName === "SCRIPT") {
+            if (element?.src?.includes("player-core-variant-a")) {
                 isVariantA = true;
             }
         }
